@@ -16,11 +16,10 @@ function App() {
       const { events } = await res.json();
       setEventData(events);
       setLoading(false);
+      console.log(events);
     };
 
     fetchEvents();
-
-    console.log(eventData);
   }, []);
 
   return (
